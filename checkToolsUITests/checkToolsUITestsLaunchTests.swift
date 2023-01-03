@@ -1,13 +1,13 @@
 //
-//  ProbandoTurismoUITestsLaunchTests.swift
-//  ProbandoTurismoUITests
+//  checkToolsUITestsLaunchTests.swift
+//  checkToolsUITests
 //
-//  Created by Markel Juaristi on 28/12/22.
+//  Created by Markel Juaristi on 3/1/23.
 //
 
 import XCTest
 
-final class ProbandoTurismoUITestsLaunchTests: XCTestCase {
+final class checkToolsUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

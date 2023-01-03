@@ -1,13 +1,13 @@
 //
-//  ProbandoTurismoUITests.swift
-//  ProbandoTurismoUITests
+//  checkToolsUITests.swift
+//  checkToolsUITests
 //
-//  Created by Markel Juaristi on 28/12/22.
+//  Created by Markel Juaristi on 3/1/23.
 //
 
 import XCTest
 
-final class ProbandoTurismoUITests: XCTestCase {
+final class checkToolsUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

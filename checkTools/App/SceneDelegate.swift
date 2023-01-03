@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  ProbandoTurismo
+//  checkTools
 //
-//  Created by Markel Juaristi on 28/12/22.
+//  Created by Markel Juaristi on 3/1/23.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowsScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowsScene)
-        window?.rootViewController = UITableViewController()
+        window?.rootViewController = TableViewController()
         window?.makeKeyAndVisible()
     }
 

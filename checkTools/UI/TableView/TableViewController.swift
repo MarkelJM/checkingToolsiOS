@@ -1,25 +1,27 @@
 //
-//  TebleViewController.swift
-//  ProbandoTurismo
+//  TableViewController.swift
+//  checkTools
 //
-//  Created by Markel Juaristi on 28/12/22.
+//  Created by Markel Juaristi on 3/1/23.
 //
 
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+
     @IBOutlet weak var tableView: UITableView!
     
     let singleRows = ["lunes", "martes", "miercoles", "jueves","viernes", "sabado", "domingo"]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         /* con esto hacemos que la clase TableviewController herede de UITAbleview delegate y datasource*/
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    
     }
     //Delegate and DataSource methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,6 +38,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
 
-     
+
+
+    
 
 }
