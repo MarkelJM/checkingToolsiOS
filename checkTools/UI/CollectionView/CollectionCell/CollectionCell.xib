@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionCell" customModule="checkTools" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCollectionCell" id="gTV-IL-0wX" customClass="CollectionCell" customModule="checkTools" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -27,17 +27,19 @@
                                     <constraint firstAttribute="height" constant="60" id="sNY-wM-Ccc"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6q-Og-4S1">
-                                <rect key="frame" x="37" y="84" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6q-Og-4S1">
+                                <rect key="frame" x="8" y="84" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
+                            <constraint firstItem="w6q-Og-4S1" firstAttribute="top" secondItem="skY-Ei-bUd" secondAttribute="bottom" constant="8" id="8Ze-a1-WMZ"/>
                             <constraint firstItem="skY-Ei-bUd" firstAttribute="top" secondItem="GgT-6N-b2n" secondAttribute="top" constant="16" id="9Fk-5z-t4b"/>
+                            <constraint firstItem="w6q-Og-4S1" firstAttribute="leading" secondItem="GgT-6N-b2n" secondAttribute="leading" constant="8" id="H6Y-nh-wa6"/>
+                            <constraint firstAttribute="trailing" secondItem="w6q-Og-4S1" secondAttribute="trailing" constant="8" id="QS1-Rt-6A5"/>
                             <constraint firstItem="skY-Ei-bUd" firstAttribute="centerX" secondItem="GgT-6N-b2n" secondAttribute="centerX" id="fq1-dw-ppy"/>
                         </constraints>
                     </view>
@@ -51,12 +53,16 @@
                 <constraint firstAttribute="trailing" secondItem="GgT-6N-b2n" secondAttribute="trailing" id="vCS-dq-zci"/>
             </constraints>
             <size key="customSize" width="117" height="117"/>
+            <connections>
+                <outlet property="iconImageView" destination="skY-Ei-bUd" id="CKX-Q4-xK4"/>
+                <outlet property="titleLabel" destination="w6q-Og-4S1" id="7sO-Z3-wfI"/>
+            </connections>
             <point key="canvasLocation" x="180.91603053435114" y="-34.859154929577464"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

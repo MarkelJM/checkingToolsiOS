@@ -22,6 +22,11 @@
 		D354C95C2964549F0025BCC8 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D354C95A2964549F0025BCC8 /* TableViewController.xib */; };
 		D354C96029645C380025BCC8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D354C95E29645C380025BCC8 /* TableViewCell.swift */; };
 		D354C96129645C380025BCC8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D354C95F29645C380025BCC8 /* TableViewCell.xib */; };
+		D36FA1F029731D41001BA00C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36FA1EE29731D41001BA00C /* LoginViewController.swift */; };
+		D36FA1F129731D41001BA00C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36FA1EF29731D41001BA00C /* LoginViewController.xib */; };
+		D36FA1F42973239E001BA00C /* LocalDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36FA1F32973239E001BA00C /* LocalDataLayer.swift */; };
+		D36FA1F6297323AF001BA00C /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36FA1F5297323AF001BA00C /* NetworkLayer.swift */; };
+		D36FA1F929732B3B001BA00C /* Heroe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36FA1F829732B3B001BA00C /* Heroe.swift */; };
 		D3EE31C2296DFF1D00EF5179 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE31C1296DFF1D00EF5179 /* HomeTabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +67,11 @@
 		D354C95A2964549F0025BCC8 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		D354C95E29645C380025BCC8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D354C95F29645C380025BCC8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D36FA1EE29731D41001BA00C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D36FA1EF29731D41001BA00C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D36FA1F32973239E001BA00C /* LocalDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataLayer.swift; sourceTree = "<group>"; };
+		D36FA1F5297323AF001BA00C /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		D36FA1F829732B3B001BA00C /* Heroe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroe.swift; sourceTree = "<group>"; };
 		D3EE31C1296DFF1D00EF5179 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +142,8 @@
 		D354C925296453D40025BCC8 /* checkTools */ = {
 			isa = PBXGroup;
 			children = (
+				D36FA1F72973286E001BA00C /* Models */,
+				D36FA1F22973231C001BA00C /* Manager */,
 				D354C957296454270025BCC8 /* App */,
 				D354C956296453FC0025BCC8 /* UI */,
 				D354C92F296453D50025BCC8 /* Assets.xcassets */,
@@ -161,9 +173,10 @@
 		D354C956296453FC0025BCC8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D3054CAC29708C670088E0FD /* CollectionView */,
 				D3EE31C0296DFEE000EF5179 /* HomeTabBar */,
+				D36FA1ED29731CF2001BA00C /* LoginView */,
 				D354C958296454690025BCC8 /* TableView */,
+				D3054CAC29708C670088E0FD /* CollectionView */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -194,6 +207,32 @@
 				D354C95F29645C380025BCC8 /* TableViewCell.xib */,
 			);
 			path = TableCell;
+			sourceTree = "<group>";
+		};
+		D36FA1ED29731CF2001BA00C /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				D36FA1EE29731D41001BA00C /* LoginViewController.swift */,
+				D36FA1EF29731D41001BA00C /* LoginViewController.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		D36FA1F22973231C001BA00C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D36FA1F32973239E001BA00C /* LocalDataLayer.swift */,
+				D36FA1F5297323AF001BA00C /* NetworkLayer.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D36FA1F72973286E001BA00C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D36FA1F829732B3B001BA00C /* Heroe.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D3EE31C0296DFEE000EF5179 /* HomeTabBar */ = {
@@ -313,6 +352,7 @@
 				D354C96129645C380025BCC8 /* TableViewCell.xib in Resources */,
 				D3054CB5297090520088E0FD /* CollectionCell.xib in Resources */,
 				D354C933296453D50025BCC8 /* LaunchScreen.storyboard in Resources */,
+				D36FA1F129731D41001BA00C /* LoginViewController.xib in Resources */,
 				D354C930296453D50025BCC8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,11 +379,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3054CAF29708C960088E0FD /* CollectionViewController.swift in Sources */,
+				D36FA1F929732B3B001BA00C /* Heroe.swift in Sources */,
 				D354C927296453D40025BCC8 /* AppDelegate.swift in Sources */,
 				D354C96029645C380025BCC8 /* TableViewCell.swift in Sources */,
+				D36FA1F42973239E001BA00C /* LocalDataLayer.swift in Sources */,
 				D354C95B2964549F0025BCC8 /* TableViewController.swift in Sources */,
+				D36FA1F029731D41001BA00C /* LoginViewController.swift in Sources */,
 				D3054CB4297090520088E0FD /* CollectionCell.swift in Sources */,
 				D354C929296453D40025BCC8 /* SceneDelegate.swift in Sources */,
+				D36FA1F6297323AF001BA00C /* NetworkLayer.swift in Sources */,
 				D3EE31C2296DFF1D00EF5179 /* HomeTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
